@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		065EFC73207200510079A321 /* TestKvoClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 065EFC72207200510079A321 /* TestKvoClass.m */; };
+		065EFC76207200610079A321 /* TestKvoObserverClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 065EFC75207200610079A321 /* TestKvoObserverClass.m */; };
+		065EFC792072009B0079A321 /* KvoClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 065EFC782072009B0079A321 /* KvoClassProperty.m */; };
+		065EFC7C207212500079A321 /* NSObject+kvo.m in Sources */ = {isa = PBXBuildFile; fileRef = 065EFC7B207212500079A321 /* NSObject+kvo.m */; };
+		065EFC7F20721A200079A321 /* KvoObserverInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 065EFC7E20721A200079A321 /* KvoObserverInfo.m */; };
 		0680259B2068F5F2002AC373 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0680259A2068F5F2002AC373 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +28,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		065EFC71207200510079A321 /* TestKvoClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKvoClass.h; sourceTree = "<group>"; };
+		065EFC72207200510079A321 /* TestKvoClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKvoClass.m; sourceTree = "<group>"; };
+		065EFC74207200610079A321 /* TestKvoObserverClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestKvoObserverClass.h; sourceTree = "<group>"; };
+		065EFC75207200610079A321 /* TestKvoObserverClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestKvoObserverClass.m; sourceTree = "<group>"; };
+		065EFC772072009B0079A321 /* KvoClassProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KvoClassProperty.h; sourceTree = "<group>"; };
+		065EFC782072009B0079A321 /* KvoClassProperty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvoClassProperty.m; sourceTree = "<group>"; };
+		065EFC7A207212500079A321 /* NSObject+kvo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+kvo.h"; sourceTree = "<group>"; };
+		065EFC7B207212500079A321 /* NSObject+kvo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+kvo.m"; sourceTree = "<group>"; };
+		065EFC7D20721A200079A321 /* KvoObserverInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KvoObserverInfo.h; sourceTree = "<group>"; };
+		065EFC7E20721A200079A321 /* KvoObserverInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KvoObserverInfo.m; sourceTree = "<group>"; };
 		068025972068F5F2002AC373 /* KVO_Support */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = KVO_Support; sourceTree = BUILT_PRODUCTS_DIR; };
 		0680259A2068F5F2002AC373 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +53,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		065EFC70207200220079A321 /* kvo */ = {
+			isa = PBXGroup;
+			children = (
+				065EFC772072009B0079A321 /* KvoClassProperty.h */,
+				065EFC782072009B0079A321 /* KvoClassProperty.m */,
+				065EFC7D20721A200079A321 /* KvoObserverInfo.h */,
+				065EFC7E20721A200079A321 /* KvoObserverInfo.m */,
+				065EFC7A207212500079A321 /* NSObject+kvo.h */,
+				065EFC7B207212500079A321 /* NSObject+kvo.m */,
+			);
+			path = kvo;
+			sourceTree = "<group>";
+		};
 		0680258E2068F5F2002AC373 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				0680259A2068F5F2002AC373 /* main.m */,
+				065EFC71207200510079A321 /* TestKvoClass.h */,
+				065EFC72207200510079A321 /* TestKvoClass.m */,
+				065EFC74207200610079A321 /* TestKvoObserverClass.h */,
+				065EFC75207200610079A321 /* TestKvoObserverClass.m */,
+				065EFC70207200220079A321 /* kvo */,
 			);
 			path = KVO_Support;
 			sourceTree = "<group>";
@@ -119,7 +152,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065EFC7F20721A200079A321 /* KvoObserverInfo.m in Sources */,
+				065EFC792072009B0079A321 /* KvoClassProperty.m in Sources */,
+				065EFC76207200610079A321 /* TestKvoObserverClass.m in Sources */,
+				065EFC7C207212500079A321 /* NSObject+kvo.m in Sources */,
 				0680259B2068F5F2002AC373 /* main.m in Sources */,
+				065EFC73207200510079A321 /* TestKvoClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +279,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = s;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
